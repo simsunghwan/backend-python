@@ -20,3 +20,6 @@ instance/
 # Environment
 .env
 .env.*
+
+credentials.json
+s
