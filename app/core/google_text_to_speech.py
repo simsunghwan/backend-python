@@ -2,6 +2,7 @@ def get_TTS(referenceText):
   try:
     from google.cloud import texttospeech
     import os
+    from dotenv import load_dotenv
     import time
     import threading
     import google.auth
@@ -10,8 +11,8 @@ def get_TTS(referenceText):
       time.sleep(delay)
       if os.path.exists(file_path):
         os.remove(file_path)
-    
-     export GOOGLE_APPLICATION_CREDENTIALS="/app/.gcp/credentials.json"
+
+    load_dotenv()
 
     credentials, project = google.auth.default()
     
