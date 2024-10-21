@@ -20,7 +20,3 @@ instance/
 # Environment
 .env
 .env.*
-
-credentials.json
-
-app/secrets/google-credentials.json

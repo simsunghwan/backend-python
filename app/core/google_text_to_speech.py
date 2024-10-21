@@ -1,7 +1,6 @@
 def get_TTS(referenceText):
   try:
     from google.cloud import texttospeech
-    from dotenv import load_dotenv
     import os
     import time
     import threading
@@ -11,16 +10,8 @@ def get_TTS(referenceText):
       time.sleep(delay)
       if os.path.exists(file_path):
         os.remove(file_path)
-
-
-    # # 환경 변수 로드 (로컬에서만 필요)
-    # load_dotenv()
-
-<<<<<<< HEAD
-=======
-    # # Google Cloud 서비스 계정 키 파일 경로 설정
-    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/secrets/google-credentials.json"
->>>>>>> 3f93e3c5dc5dabdd3cffeb30b00be1c2dae88cbe
+    
+     export GOOGLE_APPLICATION_CREDENTIALS="/app/.gcp/credentials.json"
 
     credentials, project = google.auth.default()
     
