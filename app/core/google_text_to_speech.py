@@ -13,8 +13,10 @@ def get_TTS(referenceText):
         os.remove(file_path)
 
 
-    # # 환경 변수 로드 (로컬에서만 필요)
+    # 환경 변수 로드 (로컬에서만 필요)
+
     load_dotenv()
+
 
     credentials, project = google.auth.default()
     
