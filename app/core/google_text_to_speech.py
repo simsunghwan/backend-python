@@ -14,8 +14,7 @@ def get_TTS(referenceText):
 
 
     # # 환경 변수 로드 (로컬에서만 필요)
-    # load_dotenv()
-
+    load_dotenv()
 
     credentials, project = google.auth.default()
     

@@ -23,6 +23,4 @@ instance/
 
 credentials.json
 
-credentials.json
-
 app/secrets/google-credentials.json
