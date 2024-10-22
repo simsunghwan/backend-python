@@ -1,8 +1,8 @@
 def get_TTS(referenceText):
   try:
     from google.cloud import texttospeech
-    import os
     from dotenv import load_dotenv
+    import os
     import time
     import threading
     import google.auth
@@ -12,7 +12,10 @@ def get_TTS(referenceText):
       if os.path.exists(file_path):
         os.remove(file_path)
 
-    load_dotenv()
+
+    # # 환경 변수 로드 (로컬에서만 필요)
+    # load_dotenv()
+
 
     credentials, project = google.auth.default()
     
