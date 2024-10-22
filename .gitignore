@@ -23,9 +23,6 @@ instance/
 
 credentials.json
 
-<<<<<<< HEAD
 credentials.json
 
-=======
->>>>>>> 1110ec5e123eb218f645ab9f2d214038083093d4
 app/secrets/google-credentials.json
